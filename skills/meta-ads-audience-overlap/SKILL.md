@@ -1,6 +1,6 @@
 ---
 name: meta-ads-audience-overlap
-description: "When the user suspects their Meta Ads ad sets are competing against each other, wants to check audience overlap, is seeing inflated CPMs across multiple campaigns, or is deciding whether to consolidate ad sets. Triggers on 'check audience overlap', 'my ad sets are competing against each other', 'CPMs are inflated', 'should I consolidate ad sets', 'Advantage+ audience exclusions', or 'is this the Meta equivalent of keyword cannibalization'. This is the direct Meta equivalent of Google Ads keyword cannibalization — for the search-side pattern see the Google Ads negative-keywords skill; for the fix mechanics here see meta-ads-exclusions."
+description: "When the user suspects their Meta Ads ad sets are competing against each other, wants to check audience overlap, is seeing inflated CPMs across multiple campaigns, or is deciding whether to consolidate ad sets. Triggers on 'check audience overlap', 'my ad sets are competing against each other', 'CPMs are inflated', 'should I consolidate ad sets', 'Advantage+ audience exclusions', or 'is this the Meta equivalent of keyword cannibalization'. 
 metadata:
   version: 1.0.0
 ---
