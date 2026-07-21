@@ -1,6 +1,6 @@
 ---
 name: meta-ads-audience-overlap
-description: "When the user suspects their Meta Ads ad sets are competing against each other, wants to check audience overlap, is seeing inflated CPMs across multiple campaigns, or is deciding whether to consolidate ad sets. Triggers on 'check audience overlap', 'my ad sets are competing against each other', 'CPMs are inflated', 'should I consolidate ad sets', 'Advantage+ audience exclusions', or 'is this the Meta equivalent of keyword cannibalization'. 
+description: "When the user suspects their Meta Ads ad sets are competing against each other, wants to check audience overlap, is seeing inflated CPMs across multiple campaigns, or is deciding whether to consolidate ad sets. Triggers on 'check audience overlap', 'my ad sets are competing against each other', 'CPMs are inflated', 'should I consolidate ad sets', 'Advantage+ audience exclusions', or 'is this the Meta equivalent of keyword cannibalization'. This is the direct Meta equivalent of Google Ads keyword cannibalization — the fix mechanics live in meta-ads-exclusions."
 metadata:
   version: 1.0.0
 ---
@@ -48,29 +48,3 @@ Compare the CPM of the suspected overlapping ad sets against a comparable, non-o
 - A deliberate, short-lived Lookalike ladder test (1%/2%/5%) run to compare performance, with the intent to consolidate afterward.
 
 ## Output Template
-
-```
-OVERLAP AUDIT WORKSHEET
-Ad sets compared: [ ]
-Overlap %: [ ]
-CPM inflation estimate: [ ]
-Root cause: [ ] (duplicate audiences / broad + custom collision / retargeting bleed)
-Fix applied: [ ] (exclusion / consolidation / Advantage+ + exclusion)
-Re-check date: [ ]
-```
-
-## Common Mistakes
-
-- Duplicating an ad set to "test" a variable without adding exclusions — this is the single most common cause of self-inflicted overlap.
-- Checking overlap only at campaign launch, never revisiting as audiences get reused across new campaigns over time.
-- Excluding too aggressively and starving an Advantage+ audience of the signal it needs to optimize.
-- Confusing overlap symptoms (rising CPM, falling delivery) with frequency-cap or creative-fatigue symptoms, which look similar but have a different root cause and a different fix.
-
-## Related Skills
-
-- meta-ads-audience-targeting / meta-ads-audiences — the targeting setup being audited
-- meta-ads-exclusions — the mechanical fix for overlap
-- meta-ads-segmentation — structuring audiences to avoid overlap from the start
-- meta-ads-experiments — the correct, non-overlapping way to run comparison tests
-- meta-ads-budget-pacing — overlap's downstream effect on pacing and delivery
-- meta-ads-account-audit — where overlap checks fit into a full account review
